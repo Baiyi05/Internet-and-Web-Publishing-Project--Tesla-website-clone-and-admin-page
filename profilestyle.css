@@ -1,0 +1,39 @@
+.Discover-name {
+    width: 25vw;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+table,
+tr,
+td {
+    padding: 20px 50px;
+}
+
+table {
+    margin-left: 18%;
+    margin-right: 5%;
+}
+
+h1,
+b {
+    text-decoration: underline;
+}
+
+button{
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px;
+    margin-left: 24%;
+    font-size: 120%;
+    background-color: black;
+    color: white;
+    border: none;
+    z-index: -2;
+}
+button:hover{
+    background-color: grey;
+}

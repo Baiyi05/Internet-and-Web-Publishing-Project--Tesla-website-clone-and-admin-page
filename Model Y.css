@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    font-family: "Open Sans";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.Background1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/17.jpg);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    padding: 0 7%;
+}
+
+.title {
+    padding-top: 10%;
+    text-align: center;
+    font-size: 170%;
+    width: 100%;
+}
+
+.info {
+    text-align: center;
+    color: white;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    font-weight: 300;
+    font-size: 18px;
+    justify-content: space-between;
+    padding: 30% 50px;
+    font-weight: bold;
+}
+
+.btn {
+    border: 1px solid rgb(0, 91, 237);
+    padding: 12px 50px;
+    border-radius: 10%;
+    font-weight: bold;
+    background-color: rgb(0, 91, 237);
+    font-size: 15px;
+}
+
+#btn{
+    text-decoration: none;
+    color: white;
+}
+
+.Background2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/18.jpg);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    color: white;
+    font-weight: none;
+    font-size: 15px;
+    padding-left: 10%;
+    padding-top: 40%;
+    padding-right: 30%;
+}
+
+.Background3 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: black;
+    color: white;
+}
+
+.content3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+#video {
+    height: auto;
+    width: 50%;
+}
+
+.info3 {
+    color: white;
+    text-align: left;
+    padding: 20px;
+    flex: 1;
+}
+
+.Background4 {
+    background-color: black;
+    padding-top: 5%;
+    padding-bottom: 20%;
+    padding-left: 6%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#image4 {
+    width: 60%;
+    height: 60%;
+}
+
+.Button4 {
+    font-size: 200%;
+    width: 250px;
+    text-align: center;
+    border: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-decoration: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+#Charging,
+#Performance,
+#ActiveSafety,
+#Utility,
+#PhoneIntegration {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.content5 {
+    position: relative;
+    z-index: 1;
+}
+
+.Background5 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Background5 video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.content5 {
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    top: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.Background6 {
+    background-color: black;
+}
+
+#image6 {
+    margin-top: 10%;
+    margin-left: 13%;
+    width: 75%;
+    height: 75%;
+}
+
+.Button6 button {
+    text-align: center;
+    margin-left: 22%;
+    cursor: point;
+    border: none;
+    background-color: black;
+    width: 250px;
+    color: white;
+}
+
+.Button6 button:hover {
+    color: grey;
+}
+
+.Background7 {
+    text-align: left;
+    background-color: black;
+    color: black;
+    margin-bottom: 20%;
+}
+
+.img2 {
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+}
+
+.content7 {
+    padding-left: 15%;
+    padding-right: 35%;
+    position: relative;
+    transform: translate(0, 200%);
+}
+
+#video2-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.Background8 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.Background8 video {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.content8 {
+    color: white;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    margin-left: 15%;
+    margin-right: 20%;
+}
+
+.Background9 {
+    text-align: left;
+    background-color: white;
+    color: black;
+    margin-bottom: 20%;
+}
+
+.img3 {
+    width: 100%;
+}
+
+.content9 {
+    text-align: center;
+    padding-right: 2%;
+}
+
+.Background10 {
+    background-color: black;
+}
+
+.img10 {
+    margin-top: -10%;
+    width: 100%;
+}
+
+.content10 {
+    text-align: center;
+    transform: translateY(-150%);
+    color: white;
+    padding-left: 18%;
+    padding-right: 20%;
+}
+
+.img11 {
+    width: 100%;
+}
+
+.content11 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2%;
+    padding-left: 18%;
+    padding-right: 15%;
+    box-sizing: border-box;
+    width: auto;
+    gap: 8%;
+    padding-bottom: 10%;
+    color: white;
+}
+
+.content11_1 {
+    width: 24%;
+}
+
+.Background11 {
+    background-color: black;
+}
+
+.Background13 {
+    background-color: black;
+}
+
+.content13 {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: black;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+    color: white;
+}
+
+.img13 {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    height: 75%;
+}
+
+td,
+tr {
+    padding: 10px;
+    border: none;
+}

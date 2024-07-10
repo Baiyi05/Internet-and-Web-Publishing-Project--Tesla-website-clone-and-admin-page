@@ -1,0 +1,30 @@
+
+
+h1 {
+    text-decoration: underline;
+}
+
+.main {
+    padding-top: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+    overflow: hidden;
+}
+
+form{
+    background-color: grey;
+    padding: 20px 20px;
+    color: white;
+}
+
+input[type="text"] {
+    width: 600px;
+    height: 100px;
+    text-align: center;
+    color: grey;
+}
+
+input[type="Submit"] {
+    font-size: 150%;
+}

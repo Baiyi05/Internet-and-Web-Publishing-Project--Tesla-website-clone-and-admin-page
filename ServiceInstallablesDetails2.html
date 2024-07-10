@@ -1,0 +1,346 @@
+<html>
+
+<head>
+	<link rel="icon" type="image/tesla-icon" href="images/tesla.ico">
+	<title>ModelYDetails | Tesla</title>
+	<link rel="stylesheet" href="shopmenu.css">
+
+	<style>
+		#main {
+			display: flex;
+			margin-top: 3%;
+		}
+
+		#content {
+			overflow: hidden;
+			margin-left: 10px;
+		}
+
+		#image-container {
+			width: 100%;
+
+		}
+
+		#image-container img {
+			width: 100%;
+			height: auto;
+			display: none;
+			margin-top: 50px;
+		}
+
+		#content {
+			overflow: hidden;
+			margin-left: 10px;
+			width: 50%;
+		}
+
+		input[type="submit"] {
+			background-color: blue;
+			color: black;
+			font-weight: bold;
+			width: 150px;
+			padding: 10px;
+			border-radius: 20px;
+		}
+
+		input[type="submit"]:hover {
+			font-style: oblique;
+			letter-spacing: 2px;
+		}
+	</style>
+
+<body>
+	<div id="menu">
+		<div id="navigator">
+			<div id="left_navigator">
+				<div id="logo">
+					<a href="index.html"><svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon"
+							viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
+								fill="currentColor">
+							</path>
+						</svg></a>
+				</div>
+				<div class="left_shop">
+					<p>|</p>
+					<button><a href="TeslaShop main page.html"
+							style="text-decoration: none;"><span>Shop</span></a></button>
+				</div>
+			</div>
+
+			<div id="mid_navigator">
+				<div id="menu_container">
+					<ol>
+						<li>
+							<div id="Charging-menu-item">
+								<button><a href="TeslaChargingpage.html"><span>Charging</span></a></button>
+								<div id="Charging-dropdown">
+									<div class="Charging-row">
+										<a href="#">
+											<div class="category">
+												<div class="Charging-name"><a href="ShopChargingDetails.html">Wall
+														Connector</a>
+												</div>
+											</div>
+										</a>
+
+										<a href="#">
+											<div class="category">
+												<div class="Charging-name"><a href="ShopAdaptersDetails.html">Gen 2
+														Universal Mobile
+														Connector</a></div>
+											</div>
+										</a>
+
+										<a href="#">
+											<div class="category">
+												<div class="Charging-name"><a href="ShopAdaptersDetails2.html">Mennekes
+														Type 2
+														Adapter-7.5m</a></div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<div id="Lifestyle-menu-item">
+								<button><a href="Lifestylepage.html"><span>Lifestyle</span></a></button>
+								<div id="Lifestyle-dropdown">
+									<div class="Lifestyle-row">
+										<a href="#">
+											<div class="category">
+												<div class="Lifestyle-name"><a href="LifestyleDrinkWareDetails.html">On
+														the Roap Cup</a>
+												</div>
+											</div>
+										</a>
+
+										<a href="#">
+											<div class="category">
+												<div class="Lifestyle-name"><a
+														href="LifestyleDrinkWareDetails2.html">Stainless Steel Water
+														Bottle</a></div>
+											</div>
+										</a>
+
+										<a href="#">
+											<div class="category">
+												<div class="Lifestyle-name"><a
+														href="LifestyleOutDoorDetails.html">Desktop
+														Supercharger</a></div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="Service-menu-item">
+								<button><a href="ServiceInstallablesPage.html"><span>Service</span></a></button>
+								<div id="Service-dropdown">
+									<div class="Service-row">
+										<a href="#">
+											<div class="category">
+												<div class="Service-name"><a
+														href="ServiceInstallablesDetails.html">Model 3</a></div>
+											</div>
+										</a>
+
+										<a href="#">
+											<div class="category">
+												<div class="Service-name"><a
+														href="ServiceInstallablesDetails2.html">Model Y</a></div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ol>
+				</div>
+			</div>
+
+			<div id="right_navigator">
+				<div id="icon_menu">
+					<ol>
+						<li>
+							<div class="search">
+								<input type="text" name="search-text" class="search-input" required=""
+									placeholder="Search...">
+								<div class="icon">
+									<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+										<title>Search</title>
+										<path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+											fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32">
+										</path>
+										<path fill="none" stroke="currentColor" stroke-linecap="round"
+											stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
+									</svg>
+								</div>
+							</div>
+						</li>
+						<li><a href="cart.html">
+								<svg style="padding-top: 8px;" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+									<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+									<g id="SVGRepo_iconCarrier">
+										<path
+											d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z"
+											stroke="#000000" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round"></path>
+									</g>
+								</svg>
+							</a></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main">
+		<div id="image-container">
+			<div class="slideshow-container">
+				<img id="slide1" class="slide active" src="images/ModelY.jpg" alt="Image 1">
+				<img id="slide2" class="slide" src="images/ModelY1.jpg" alt="Image 2">
+			</div>
+		</div>
+
+		<div id="content">
+			<h1 style="text-decoration:underline;">3M window filming for Tesla with installation</h1>
+			<h2>RM 570</h2>
+			</br></br>
+
+			<p><input type="submit" value="Add to Cart" /></p>
+
+			</br></br>
+			<h3>Description</h3>
+			<p>A new installation service for 3M Window Filming, which is applicable for all Tesla models.
+				Blocking up to 99% of ultraviolet (UV) light. This helps provide vehicle occupants with significant
+				protection from
+				harmful UV rays. Installing 3M Window Filming can effectively protect you and your car by reducing the
+				heat buildup
+				inside the car, which in turn reduces the need for air conditioning and helps save energy. Additionally,
+				it prolongs
+				the life of your car’s interior such as seats and dashboards, by reducing the damage from ultraviolet
+				rays. </p>
+
+			</br></br>
+			<h3>Order Guidance:</h3>
+			<ul>
+				<li>Service-installed vehicle accessories are only available for purchase at Tesla Service Centers.
+				</li>
+				<li>To purchase or for questions about service-installed vehicle accessories, please contact
+					<u>onlineordersmy@tesla.com</u> or 1 800 81 0656.
+					Once installed, service-installed vehicle accessories are non-refundable.</li>
+				<li>3M Window Film has a five-year warranty (from the date of installation) (the “Warranty Period”) and
+					is not refundable.</li>
+			</ul>
+
+			<table style="width:100%">
+				<tr>
+					<td>Model 3</td>
+					<td>Price</td>
+				</tr>
+				<tr>
+					<td>3M tinted for Tesla Model 3 All Glass</td>
+					<td>RM 2,550</td>
+				</tr>
+				<tr>
+					<td>3M tinted for Tesla Model 3 Front Glass </td>
+					<td>RM 970</td>
+				</tr>
+				<tr>
+					<td>3M tinted for Tesla Model 3 Roof Glass</td>
+					</td>
+					<td>RM 570</td>
+				</tr>
+				<tr>
+					<td>3M tinted for Tesla Model 3 Rear Glass</td>
+					<td>RM 1,250</td>
+				</tr>
+				<tr>
+					<td>3M tinted for Tesla Model 3 all Door Glass</td>
+					<td>RM 1,000</td>
+				</tr>
+
+				<table style="width:100%">
+					<tr>
+						<td>
+							Model Y
+						</td>
+						<td>Price</td>
+
+					<tr>
+						<td>
+							3M tinted for Tesla Model Y All Glass
+						</td>
+						<td>RM 2,700</td>
+					<tr>
+						<td>
+							3M tinted for Tesla Model Y Front Glass
+						</td>
+						<td>RM 1,200</td>
+					<tr>
+						<td>
+							3M tinted for Tesla Model Y Roof Glass
+						</td>
+						<td>RM 950</td>
+					<tr>
+						<td>
+							3M tinted for Tesla Model Y Rear Glass
+						</td>
+						<td>RM 710</td>
+					<tr>
+						<td>
+							3M tinted for Tesla Model Y all Door Glass
+						</td>
+						<td>RM 1,200</td>
+					</tr>
+				</table>
+		</div>
+	</div>
+	<div class="footer" >
+		<footer>
+			<div id="footer" style="text-align: center;align-items: center;">
+				<nav class="footernav">
+					<ul id="footerlist">
+						<li>
+							<a href="about us.html">Tesla &copy; 2024</a>
+						</li>
+						<li>
+							Privacy & Legal
+						</li>
+						<li>
+							<a href="contact.html" >Contact</a>
+						</li>
+						<li>
+							Locations
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+	</div>
+
+					<script>
+						var slides = document.querySelectorAll('.slide');
+						var currentSlideIndex = 0;
+
+						function showSlide(n) {
+							slides[currentSlideIndex].style.display = 'none';
+							currentSlideIndex = (n + slides.length) % slides.length;
+							slides[currentSlideIndex].style.display = 'block';
+						}
+
+						function nextSlide() {
+							showSlide(currentSlideIndex + 1);
+						}
+
+						setInterval(nextSlide, 3000);
+					</script>
+</body>
+
+</html>

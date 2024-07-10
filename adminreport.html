@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/tesla-icon" href="images/tesla.ico">
+    <title>Sales Report | Tesla</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="adminmenu.css">
+    <style>
+        .report-header,
+        .summary,
+        .details {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .print-button {
+            margin-bottom: 20px;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                font-size: 12pt;
+            }
+
+            .print-button {
+                display: none;
+            }
+
+            .report-header,
+            .summary,
+            .details {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="header-left">
+                <span class="material-icons-outlined">account_circle</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined">notifications</span>
+            </div>
+            <div class="header-right">
+                <div class="searchBox">
+
+                    <input class="searchInput" type="text" name="" placeholder="Search something">
+                    <button class="searchButton" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                            <g clip-path="url(#clip0_2_17)">
+                                <g filter="url(#filter0_d_2_17)">
+                                    <path
+                                        d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z"
+                                        stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                                        shape-rendering="crispEdges"></path>
+                                </g>
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                    </feColorMatrix>
+                                    <feOffset dy="4"></feOffset>
+                                    <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                    </feColorMatrix>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17">
+                                    </feBlend>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17"
+                                        result="shape"></feBlend>
+                                </filter>
+                                <clipPath id="clip0_2_17">
+                                    <rect width="28.0702" height="28.0702" fill="white"
+                                        transform="translate(0.403503 0.526367)"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand" style="font-size: 36px;">
+                    <span class="material-icons-outlined">electric_car</span> Tesla
+                </div>
+            </div>
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <a href="admindashboard.html">
+                        <span class="material-icons-outlined">grid_view</span> Dashboard
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="adminstaff.html">
+                        <span class="material-icons-outlined">badge</span> Staff
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="adminmemberpage.html">
+                        <span class="material-icons-outlined">groups</span> Member
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="admincategories.html">
+                        <span class="material-icons-outlined">category</span> Categories
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="adminproduct.html">
+                        <span class="material-icons-outlined">inventory_2</span> Products
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="adminorder.html">
+                        <span class="material-icons-outlined">inventory</span> Order
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="adminreport.html">
+                        <span class="material-icons-outlined">summarize</span> Reports
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" id="logout-link" id="logout-link">
+                        <span class="material-icons-outlined">logout</span> Logout
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="main-container">
+            <div class="report-header">
+                <h1>Sales Report</h1>
+                <p>Company: Tesla</p>
+                <p>Date Range: January 1, 2023 - May 28, 2024</p>
+                <p>Date Generated: May 28, 2024</p>
+            </div>
+            <div class="print-button">
+                <button onclick="printMainContainer()">Print Report</button>
+            </div>
+
+            <div class="summary">
+                <h2>Summary</h2>
+                <table>
+                    <tr>
+                        <th>Total Sales Revenue</th>
+                        <td>RM 1,234,567</td>
+                    </tr>
+                    <tr>
+                        <th>Number of Orders</th>
+                        <td>456</td>
+                    </tr>
+                    <tr>
+                        <th>Average Order Value</th>
+                        <td>RM 2,707</td>
+                    </tr>
+                    <tr>
+                        <th>Total Units Sold</th>
+                        <td>789</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="details">
+                <h2>Sales by Car Model</h2>
+                <table>
+                    <tr>
+                        <th>Car Model</th>
+                        <th>Units Sold</th>
+                        <th>Revenue</th>
+                        <th>% of Total Sales</th>
+                    </tr>
+                    <tr>
+                        <td>Model 3</td>
+                        <td>150</td>
+                        <td>RM 750,000</td>
+                        <td>60%</td>
+                    </tr>
+                    <tr>
+                        <td>Model Y</td>
+                        <td>200</td>
+                        <td>RM 400,000</td>
+                        <td>32%</td>
+                    </tr>
+                    <tr>
+                        <td>Cybertruck</td>
+                        <td>50</td>
+                        <td>RM 84,000</td>
+                        <td>8%</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="details">
+                <h2>Sales by Shop Item</h2>
+                <table>
+                    <tr>
+                        <th>Item</th>
+                        <th>Units Sold</th>
+                        <th>Revenue</th>
+                        <th>% of Total Sales</th>
+                    </tr>
+                    <tr>
+                        <td>On the Road Cup</td>
+                        <td>100</td>
+                        <td>RM 2,500</td>
+                        <td>0.2%</td>
+                    </tr>
+                    <tr>
+                        <td>Stainless Steel Water Bottle</td>
+                        <td>150</td>
+                        <td>RM 3,000</td>
+                        <td>0.24%</td>
+                    </tr>
+                    <tr>
+                        <td>Desktop Supercharger</td>
+                        <td>75</td>
+                        <td>RM 3,750</td>
+                        <td>0.3%</td>
+                    </tr>
+                    <tr>
+                        <td>Wall Connector</td>
+                        <td>60</td>
+                        <td>RM 30,000</td>
+                        <td>2.4%</td>
+                    </tr>
+                    <tr>
+                        <td>Gen 2 Universal Mobile Connector</td>
+                        <td>45</td>
+                        <td>RM 6,750</td>
+                        <td>0.54%</td>
+                    </tr>
+                    <tr>
+                        <td>MENNEKES Type 2 Adapter - 7.5m</td>
+                        <td>30</td>
+                        <td>RM 4,500</td>
+                        <td>0.36%</td>
+                    </tr>
+                    <tr>
+                        <td>3M Window Filming for Tesla with Installation (Model 3)</td>
+                        <td>20</td>
+                        <td>RM 2,000</td>
+                        <td>0.16%</td>
+                    </tr>
+                    <tr>
+                        <td>3M Window Filming for Tesla with Installation (Model Y)</td>
+                        <td>25</td>
+                        <td>RM 2,500</td>
+                        <td>0.2%</td>
+                    </tr>
+                </table>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="adminreport.js"></script>
+</body>
+
+</html>

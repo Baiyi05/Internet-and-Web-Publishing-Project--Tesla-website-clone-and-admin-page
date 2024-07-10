@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*   {
+    font-family: "Open Sans";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+.content{
+    margin-top: 0;
+    max-width: 45%;
+    margin-left: 35%;
+    max-height: 100%;
+    }
+
+.main >p,
+.main >h1
+    {
+    margin: 1.0rem 0;
+    }
+
+h1{
+    text-align: center;
+    letter-spacing: 2px;
+    }
+
+.btn{
+    z-index: 3;
+    text-align: left;
+    border: none;
+    background-color: white;
+    color: grey;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    font-weight: bold;
+    padding: 2rem 2rem;
+    outline: none;
+    }
+
+.btn{
+    font-size: 1.5rem;
+    }
+
+.active,
+.btn:hover{
+    background-color: #CECECE;
+    }
+
+.pannel{
+    padding: 1rem 1rem 1rem;
+    background-color: white;
+    overflow: hidden;
+    background-color: #E0E0E0;
+    display: none;
+}
+
+.pannel p{
+    font-size: 1.2rem;
+    line-height: 1.4;
+    }
+
+.faq{
+    border: 1px;
+    margin: 10px 0;
+    }
+
+.faq.active{
+    border: none;
+    }
+
+/* nav{
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+    
+.logo{
+    width: 150px;
+}
+    
+nav ul li{
+    padding-top: 10px;
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+    
+nav ul li a {
+    text-decoration: none;
+    font-weight: 400; */
+/* } */
+
+.list li a {
+    text-decoration: none;
+    color: black;
+}
+ 
+/* .nav1{
+    margin-left: 6%;
+}
+
+.choice{
+    color: black;
+} */
+
+ul{
+    font-size: 1rem;
+    align-items: center;
+    margin-left: 3%;
+}
+
+.title,.list{
+    max-width: 15%;
+    margin-left: 5%;
+    overflow: hidden;
+    list-style: none;
+    font-family: "Open Sans";
+    font-weight: bold;
+    align-items: center;
+}
+
+.title{
+    padding-top: 1%;
+}
+
+.bigtitle{
+    padding-top: 0;
+}
+
+.list{
+    float: left;
+    list-style: none;
+}
+
+.tableofcontent {
+    position: sticky;
+    top: 10%;
+}
+

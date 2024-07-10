@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/tesla-icon" href="images/tesla.ico">
+    <title>Admin Dashboard | Tesla</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="admindasahboard.css">
+    <link rel="stylesheet" href="adminmenu.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="header-left">
+                <span class="material-icons-outlined">account_circle</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined">notifications</span>
+            </div>
+            <div class="header-right">
+                <div class="searchBox">
+
+                    <input class="searchInput" type="text" name="" placeholder="Search something">
+                    <button class="searchButton" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                            <g clip-path="url(#clip0_2_17)">
+                                <g filter="url(#filter0_d_2_17)">
+                                    <path
+                                        d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z"
+                                        stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                                        shape-rendering="crispEdges"></path>
+                                </g>
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                    </feColorMatrix>
+                                    <feOffset dy="4"></feOffset>
+                                    <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                    </feColorMatrix>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17">
+                                    </feBlend>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17"
+                                        result="shape"></feBlend>
+                                </filter>
+                                <clipPath id="clip0_2_17">
+                                    <rect width="28.0702" height="28.0702" fill="white"
+                                        transform="translate(0.403503 0.526367)"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+
+                    </button>
+                </div>
+
+            </div>
+        </header>
+
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand" style="font-size: 36px;">
+                    <span class="material-icons-outlined">electric_car</span> Tesla
+                </div>
+            </div>
+
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <a href="admindashboard.html">
+                        <span class="material-icons-outlined">grid_view</span> Dashboard
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="adminstaff.html">
+                        <span class="material-icons-outlined">badge</span> Staff
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="adminmemberpage.html">
+                        <span class="material-icons-outlined">groups</span> Member
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="admincategories.html">
+                        <span class="material-icons-outlined">category</span> Categories
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="adminproduct.html">
+                        <span class="material-icons-outlined">inventory_2</span> Products
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="adminorder.html">
+                        <span class="material-icons-outlined">inventory</span> Order
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="adminreport.html">
+                        <span class="material-icons-outlined">summarize</span> Reports
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" id="logout-link">
+                        <span class="material-icons-outlined">logout</span> Logout
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="main-container" style="color: white;">
+            <div class="main-title">
+                <h2>DASHBOARD</h2>
+            </div>
+
+            <div class="main-cards">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>Sales</h3>
+
+                    </div>
+                    <div class="card-details">
+                        <h1>RM 25000</h1>
+                        <p class="percent">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" fill="currentColor"
+                                height="20" width="20">
+                                <path
+                                    d="M1408 1216q0 26-19 45t-45 19h-896q-26 0-45-19t-19-45 19-45l448-448q19-19 45-19t45 19l448 448q19 19 19 45z">
+                                </path>
+                            </svg> 20%
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>New Customer</h3>
+
+                    </div>
+                    <div class="card-details">
+                        <h1>1250</h1>
+                        <p class="percent">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" fill="currentColor"
+                                height="20" width="20">
+                                <path
+                                    d="M1408 1216q0 26-19 45t-45 19h-896q-26 0-45-19t-19-45 19-45l448-448q19-19 45-19t45 19l448 448q19 19 19 45z">
+                                </path>
+                            </svg> 15%
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>Visitor</h3>
+
+                    </div>
+                    <div class="card-details">
+                        <h1>12345</h1>
+                        <p class="percent">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" fill="currentColor"
+                                height="20" width="20">
+                                <path
+                                    d="M1408 1216q0 26-19 45t-45 19h-896q-26 0-45-19t-19-45 19-45l448-448q19-19 45-19t45 19l448 448q19 19 19 45z">
+                                </path>
+                            </svg> 40%
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>Total Orders</h3>
+
+                    </div>
+                    <div class="card-details">
+                        <h1>2142</h1>
+                        <p class="percent">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" fill="currentColor"
+                                height="20" width="20">
+                                <path
+                                    d="M1408 1216q0 26-19 45t-45 19h-896q-26 0-45-19t-19-45 19-45l448-448q19-19 45-19t45 19l448 448q19 19 19 45z">
+                                </path>
+                            </svg> 30%
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="second-main-row">
+
+                <div class="readcard">
+                    <div class="header-read">
+                        <span class="icon-read">
+                            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                    d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                        <p class="alert"><b>New message!</b></p>
+                    </div>
+
+                    <p class="message">
+                        <b>Introducing the New Model 3 Performance</b><br>Six years after the first Model 3 Performance
+                        deliveries, we are launching the new Model 3 Performance: a highly differentiated performance
+                        trim
+                        that leverages Tesla's latest manufacturing and engineering capabilities to create what we
+                        consider
+                        to be a perfect, high-performance daily driver.
+                    </p>
+
+                    <div class="actions">
+                        <a class="read" href="">
+                            Take a Look
+                        </a>
+
+                        <a class="mark-as-read" href="">
+                            Mark as Read
+                        </a>
+                    </div>
+                </div>
+
+                <div class="task-card">
+                    <div class="task-header">Tasks</div>
+                    <div class="task-body">
+                        <div class="task">
+                            <div class="task-name task1">Task 1</div>
+                            <div class="task-level">
+                                <div style="width: 90%" class="task-percent"></div>
+                            </div>
+                            <div class="task-percent-number">90%</div>
+                        </div>
+                        <div class="task">
+                            <div class="task-name task2">Task 2</div>
+                            <div class="task-level">
+                                <div style="width: 80%" class="task-percent"></div>
+                            </div>
+                            <div class="task-percent-number">80%</div>
+                        </div>
+                        <div class="task">
+                            <div class="task-name task3">Task 3</div>
+                            <div class="task-level">
+                                <div style="width: 75%" class="task-percent"></div>
+                            </div>
+                            <div class="task-percent-number">75%</div>
+                        </div>
+                        <div class="task">
+                            <div class="task-name task4">Task 4</div>
+                            <div class="task-level">
+                                <div style="width: 65%" class="task-percent"></div>
+                            </div>
+                            <div class="task-percent-number">65%</div>
+                        </div>
+                        <div class="task">
+                            <div class="task-name task5">Task 5</div>
+                            <div class="task-level">
+                                <div style="width: 50%" class="task-percent"></div>
+                            </div>
+                            <div class="task-percent-number">50%</div>
+                        </div>
+                        <div class="task">
+                            <div class="task-name task6">Task 6</div>
+                            <div class="task-level">
+                                <div style="width: 40%" class="task-percent"></div>
+                            </div>
+                            <div class="task-percent-number">40%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="chat-card-container">
+                    <div class="chat-card-header">
+                        <div class="img-avatar"></div>
+                        <div class="text-chat">Chat</div>
+                    </div>
+                    <div class="chat-card-body">
+                        <div class="messages-container">
+                            <div class="message-box left">
+                                <p>Hello, How are you?</p>
+                            </div>
+                            <div class="message-box right">
+                                <p>I'm good, thanks for asking! How about you?</p>
+                            </div>
+                        </div>
+                        <div class="message-input">
+                            <form>
+                                <textarea placeholder="Type your message here" class="message-send"></textarea>
+                                <button type="submit" class="button-send">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="charts">
+
+                <div class="charts-card">
+                    <h2 class="chart-title">Car order</h2>
+                    <div id="bar-chart-car"></div>
+                </div>
+
+                <div class="charts-card">
+                    <h2 class="chart-title">Test Drive and Order</h2>
+                    <div id="area-chart-order"></div>
+                </div>
+
+                <div class="charts-card">
+                    <h2 class="chart-title">Top 5 Products</h2>
+                    <div id="bar-chart"></div>
+                </div>
+
+                <div class="charts-card">
+                    <h2 class="chart-title">Purchase and Sales Orders</h2>
+                    <div id="area-chart"></div>
+                </div>
+
+
+            </div>
+            
+        </main>
+
+    </div>
+    <script>
+        document.getElementById('logout-link').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            if (confirm('Are you sure you want to logout?')) {
+                window.location.href = 'adminlogin.html';
+            }
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <script src="admindashboard.js"></script>
+</body>
+
+</html>

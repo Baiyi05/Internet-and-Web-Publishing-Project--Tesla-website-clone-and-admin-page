@@ -1,0 +1,203 @@
+<html>
+
+<head>
+	<link rel="icon" type="image/tesla-icon" href="images/tesla.ico">
+	<title>Register | Tesla</title>
+
+	<style>
+		body {
+			background-image: url("images/Teslared.jpg");
+			background-size: cover;
+			margin-top: 100px;
+			background-repeat: no-repeat;
+			overflow: hidden;
+		}
+
+		#Registration {
+			background-color: rgb(240, 240, 240);
+			width: 350px;
+			opacity: 0.8;
+			margin: auto;
+			border-radius: 10px;
+			box-shadow: 10px 10px 5px lightblue;
+		}
+
+		h3 {
+			font-family: Arial;
+			text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+		}
+
+		p input[type="email"],
+		input[type="text"],
+		input[type="Password"] {
+			border-radius: 20px;
+		}
+
+		input[type="submit"] {
+			background-color: #66ffff;
+			color: black;
+			font-weight:bold;
+			width: 200px;
+			padding: 5px;
+			border-radius: 20px;
+		}
+
+		input[type="submit"]:hover {
+			cursor: pointer;
+			background-color: blue;
+			text-decoration: overline;
+			color: yellow;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: overline;
+			letter-spacing: 5px;
+			color: #ff0066;
+			font-family: italic;}
+
+		#menu{
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 0;
+			z-index: 1000;
+
+		}
+
+		#navigator {
+			position: absolute;
+			width: 100%;
+			height: 56px;
+			display: flex;
+			flex-direction: row;
+			z-index: 15;
+		}
+
+		#left_navigator {
+			height: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			z-index: 1000;
+			width: 45%;
+			position: relative;
+		}
+
+		#logo {
+			height: 24px;
+			padding-left: 48px;
+			padding-block: 6px;
+		}
+
+		#logo svg {
+			height: 12px;
+			color: black;
+		}
+		
+	</style>
+
+
+
+<body>
+	<div id="menu">
+        <div id="navigator">
+            <div id="left_navigator">
+                <div id="logo">
+                    <a href="index.html"><svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon"
+                            viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
+                                fill="currentColor">
+                            </path>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div style="text-align:center;" id="Registration">
+
+		<h2 style="color:white;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">
+			<u> Reg</u>istration
+		</h2>
+		<form id="registrationForm" onsubmit="return validateForm()">
+
+			<div style="margin:auto" id="email">
+				<p><input type="email" name="email" placeholder="Enter your email address"></p>
+			</div>
+
+			<div id="Username">
+				<p><input type="text" name="name" maxlength="15" placeholder="Enter your name"></p>
+			</div>
+
+			<div id="Password">
+				<h3>Enter Your Password</h3>
+				<p><input type="password" id="password" name="Password" placeholder="Create Password"></p>
+				<p><input type="password" id="confirmPassword" name="confirmPassword"
+						placeholder="Confirm Your Password"></p>
+				<p id="passwordError" style="color:red;"></p>
+			</div>
+
+			<div id="term&conditions">
+				<p><label for="I accept all term&conditions">I accept all term&conditions</label>
+					<input type="checkbox" id="acceptTerms" name="acceptTerms">
+				</p>
+			</div>
+
+			<div id="RegisterNow">
+				<p><input type="submit" name="Register Now" value="Register Now"></p>
+
+				<div style="padding:10px;" id="AlreadyHaveAnAccount">
+					<p>Already have an Account?
+						<a href="Login.html">Login now
+					</p>
+				</div>
+			</div>
+
+	</div>
+
+	<script>
+		var Ok = true;
+		var Cancel = false;
+
+		let answer = confirm("Do you want to Create Account?");
+		if (answer == false) { window.close(); }
+
+
+
+
+		function validateForm() {
+			var password = document.getElementById("password").value;
+			var confirmPassword = document.getElementById("confirmPassword").value;
+			var passwordError = document.getElementById("passwordError");
+			var acceptTerms = document.getElementById("acceptTerms").checked;
+
+
+			if (password.length < 8) {
+				passwordError.textContent = "Password must be at least 8 characters long";
+				return false;
+			}
+
+
+			if (password !== confirmPassword) {
+				passwordError.textContent = "Passwords do not match";
+				return false;
+			}
+
+
+			if (!acceptTerms) {
+				alert("Please accept the terms & conditions.");
+				return false;
+			}
+
+
+			return true;
+		}
+	</script>
+
+</body>
+
+</html>

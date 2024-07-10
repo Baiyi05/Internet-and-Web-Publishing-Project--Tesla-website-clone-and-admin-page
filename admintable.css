@@ -1,0 +1,168 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+tr {
+    border-bottom: 1px solid #252525;
+    height: 60px;
+}
+
+.Action {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.delete,
+.edit,
+.save {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.delete {
+    background: #e62222;
+}
+
+.edit {
+    background: #1e90ff;
+}
+
+
+.delete,
+.delete span,
+.edit,
+.edit span,
+.save,
+.save span {
+    transition: 200ms;
+}
+
+.delete .delete-text,
+.edit .edit-text,
+.save .edit-text {
+    transform: translateX(2px);
+    color: white;
+    font-weight: bold;
+}
+
+.delete .delete-icon {
+    position: sticky;
+    /* border-left: 1px solid #c41b1b; */
+    transform: translateX(40%);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.edit .edit-icon,
+.save .edit-icon {
+    position: sticky;
+    /* border-left: 1px solid #c41b1b; */
+    transform: translateX(70%);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete svg,
+.edit svg,
+.save svg {
+    width: 15px;
+    fill: #eee;
+}
+
+.delete:hover {
+    background: #ff3636;
+}
+
+.edit:hover {
+    background: #1e90ff;
+}
+
+.save:hover {
+    background: darkgreen;
+}
+
+.delete:hover .delete-text,
+.edit:hover .edit-text,
+.save:hover .edit-text {
+    color: transparent;
+}
+
+.delete:hover .delete-icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(-40%);
+
+}
+
+.edit:hover .edit-icon,
+.save:hover .edit-icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(-20%);
+}
+
+.delete:focus,
+.edit:focus,
+.save:focus {
+    outline: none;
+}
+
+.delete:active .delete-icon svg,
+.edit:active .edit-icon svg,
+.save:active .edit-icon svg {
+    transform: scale(0.8);
+}
+
+.save {
+    background: green;
+}
+
+.btn-table {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tradd {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 2px;
+}
+
+.upbtn {
+    width: 130px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    color: white;
+    font-weight: 600;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    border-radius: 25px;
+}
+
+.upbtn:active {
+    transform: translate(5px, 5px);
+    transition-duration: .3s;
+}

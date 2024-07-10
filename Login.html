@@ -1,0 +1,190 @@
+<html>
+
+<head>
+	<link rel="icon" type="image/tesla-icon" href="images/tesla.ico">
+	<title>Sign up | Tesla</title>
+
+	<style>
+		body {
+			background-color: white;
+			background-image: url("images/teslalogin.jpg");
+			margin-left: auto;
+			margin-right: auto;
+			background-size: cover;
+		}
+
+		#Login {
+			text-align: center;
+			backdrop-filter: blur(10px);
+			border-radius: 20px;
+		}
+
+		#login {
+			margin: auto;
+			top: 20vh;
+			border-radius: 20px;			
+			margin-top: 12%;
+			width:400px;
+			
+		}
+
+		#name {
+			background-color: rgba(0, 0, 0, 0);
+		}
+
+		#pwd {
+			background-color: rgba(0, 0, 0, 0);
+		}
+
+		p a {
+			text-decoration: none;
+			background-color: #0066FF;
+			color: white;
+			font-weight: bold;
+			width: 200px;
+			padding: 10px;
+			border-radius: 20px;
+		}
+
+		p a:hover {
+			cursor: pointer;
+			color: yellow;
+			text-decoration: overline;
+		}
+
+		label {
+			font-size: 20px;
+		}
+
+		input[type="submit"] {
+			background-color: #66ffff;
+			color: black;
+			font-weight: bold;
+			width: 150px;
+			padding: 10px;
+			border-radius: 20px;
+			border: 30px;
+		}
+
+		input[type="submit"]:hover {
+			cursor: pointer;
+			background-color: purple;
+			text-decoration: overline;
+		}
+
+		#forgotpwd{
+			padding-top: 3%;
+		}
+
+		#forgotpwd a {
+			text-decoration: none;
+			color: lightskyblue;
+			
+		}
+
+		#forgotpwd a:visited {
+			background-color: purple;
+			text-decoration: underline;
+		}
+
+		#menu {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 0;
+			z-index: 1000;
+
+		}
+
+		#navigator {
+			position: absolute;
+			width: 100%;
+			height: 56px;
+			display: flex;
+			flex-direction: row;
+			z-index: 15;
+		}
+
+		#left_navigator {
+			height: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			z-index: 1000;
+			width: 45%;
+			position: relative;
+		}
+
+		#logo {
+			height: 24px;
+			padding-left: 48px;
+			padding-block: 6px;
+		}
+
+		#logo svg {
+			height: 12px;
+			color: black;
+		}
+	</style>
+
+<script>
+	function redirectToProfilePage(event) {
+		event.preventDefault();
+		window.location.href = 'ProfilePage.html';
+	}
+
+	window.addEventListener('DOMContentLoaded', (event) => {
+		document.getElementById('loginForm').addEventListener('submit', redirectToProfilePage);
+	});
+</script>
+
+<body>
+	<div id="menu">
+        <div id="navigator">
+            <div id="left_navigator">
+                <div id="logo">
+                    <a href="index.html"><svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon"
+                            viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
+                                fill="currentColor">
+                            </path>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div id="login">
+
+		<h1>Login/Sign in</h1>
+
+		<div id="Login">
+			<form id="loginForm">
+			<div id="name">
+				<p><input type="name" id="name" placeholder="Username" required/></p>
+
+				<p>
+				<div id="password">
+					<input type="password" id="pwd" name="pwd" placeholder="password" required/>
+					</p>
+					<p style="color: white;">
+						<label for="remember"><b>remember me?</b></label>
+						<input type="radio" name="remember" value="remember me ?">
+					</p>
+					<hr />
+					<p><a href="Registration.html">Create Account</a>
+						<input type="submit" name="Login" value="Login">
+					</p>
+				</div>
+
+				<div id="forgotpwd">
+					<a href="password%20renew.html">Forgot password?</a><br>
+					<a href="adminlogin.html">Admin login?</a>
+				</div>
+			</form>
+
+			</div>
+		</div>
+</body>
+
+</html>

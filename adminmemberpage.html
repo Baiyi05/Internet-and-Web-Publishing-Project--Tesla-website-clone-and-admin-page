@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/tesla-icon" href="images/tesla.ico">
+    <title>MEMBER | Tesla</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="adminmenu.css">
+    <link rel="stylesheet" href="admintable.css">
+    <script src="admintable.js"></script>
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="header-left">
+                <span class="material-icons-outlined">account_circle</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined">notifications</span>
+            </div>
+            <div class="header-right">
+                <div class="searchBox">
+
+                    <input class="searchInput" type="text" name="" placeholder="Search something">
+                    <button class="searchButton" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                            <g clip-path="url(#clip0_2_17)">
+                                <g filter="url(#filter0_d_2_17)">
+                                    <path
+                                        d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z"
+                                        stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                                        shape-rendering="crispEdges"></path>
+                                </g>
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                                    </feColorMatrix>
+                                    <feOffset dy="4"></feOffset>
+                                    <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                    </feColorMatrix>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17">
+                                    </feBlend>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17"
+                                        result="shape"></feBlend>
+                                </filter>
+                                <clipPath id="clip0_2_17">
+                                    <rect width="28.0702" height="28.0702" fill="white"
+                                        transform="translate(0.403503 0.526367)"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand" style="font-size: 36px;">
+                    <span class="material-icons-outlined">electric_car</span> Tesla
+                </div>
+            </div>
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <a href="admindashboard.html">
+                        <span class="material-icons-outlined">grid_view</span> Dashboard
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="adminstaff.html">
+                        <span class="material-icons-outlined">badge</span> Staff
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="adminmemberpage.html">
+                        <span class="material-icons-outlined">groups</span> Member
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="admincategories.html">
+                        <span class="material-icons-outlined">category</span> Categories
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="adminproduct.html">
+                        <span class="material-icons-outlined">inventory_2</span> Products
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="adminorder.html">
+                        <span class="material-icons-outlined">inventory</span> Order
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="adminreport.html">
+                        <span class="material-icons-outlined">summarize</span> Reports
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" id="logout-link">
+                        <span class="material-icons-outlined">logout</span> Logout
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="main-container">
+
+            <div class="staff-table">
+                <h3 align="center">Member Management</h3>
+                <div class="btn-table">
+                    <div class="tradd">
+                Member ID: <input type="text" name="td1" id="td1" size="10" maxlength="10">
+                Member Name: <input type="text" name="td2" id="td2" size="15" maxlength="20">
+                Member Email: <input type="text" name="td3" id="td3" size="15" maxlength="20">
+                Member Phone: <input type="text" name="td4" id="td4" size="15" maxlength="20">
+                Member Address: <input type="text" name="td5" id="td5" size="20" maxlength="100"></div>
+                <input type="button" class="upbtn" value="Delete" onclick="chooseDel()">
+                <input type="button" class="upbtn" value="Add" onclick="addRow()">
+                <input type="button" class="upbtn" value="Copy" onclick="copyRow()"></div>
+                <hr>
+                <table border="2px" id="ta">
+                    <tr>
+                        <th width="22.5px" style="text-align:left;"><input type="checkbox" name="chk" id="ck" value="0" onclick="chooseAll()"></th>
+                        <th>Member ID</th>
+                        <th>Member Name</th>
+                        <th>Member Email</th>
+                        <th>Member Phone</th>
+                        <th>Member Address</th>
+                        <th width="225px">Action</th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="chk" id="chk" value="0"></td>
+                        <td contenteditable="false">M0001</td>
+                        <td contenteditable="false">Ming Sheng</td>
+                        <td contenteditable="false">mingsheng@gmail.com</td>
+                        <td contenteditable="false">012-3456789</td>
+                        <td contenteditable="false">123, Jalan ABC, 12345, Kuala Lumpur</td>
+
+                        <td class="rowAction" width="225px">
+                            <div class="Action">
+                                <button class="edit" onclick="editRow(this)"><span class="edit-text">Edit</span><span class="edit-icon"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M14.846 1.403l3.752 3.753.625-.626A2.653 2.653 0 0015.471.778l-.625.625zm2.029 5.472l-3.752-3.753L1.218 15.028 0 19.998l4.97-1.217L16.875 6.875z">
+                                            </path>
+                                        </svg></span></button>
+                                <button class="delete" onclick="delRow(this)"><span
+                                        class="delete-text">Delete</span><span class="delete-icon"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z">
+                                            </path>
+                                        </svg></span></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="chk" id="chk" value="1"></td>
+                        <td contenteditable="false">M0002</td>
+                        <td contenteditable="false">Xiang Jun</td>
+                        <td contenteditable="false">xiangjun@gmail.com</td>
+                        <td contenteditable="false">012-3456789</td>
+                        <td contenteditable="false">123, Jalan ABC, 12345, Kuala Lumpur</td>
+                        <td class="rowAction" width="225px">
+                            <div class="Action">
+                                <button class="edit" onclick="editRow(this)"><span class="edit-text">Edit</span><span class="edit-icon"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M14.846 1.403l3.752 3.753.625-.626A2.653 2.653 0 0015.471.778l-.625.625zm2.029 5.472l-3.752-3.753L1.218 15.028 0 19.998l4.97-1.217L16.875 6.875z">
+                                            </path>
+                                        </svg></span></button>
+                                <button class="delete" onclick="delRow(this)"><span
+                                        class="delete-text">Delete</span><span class="delete-icon"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z">
+                                            </path>
+                                        </svg></span></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="chk" id="chk" value="2"></td>
+                        <td contenteditable="false">M0003</td>
+                        <td contenteditable="false">Jun Wee</td>
+                        <td contenteditable="false">junwee@gmail.com</td>
+                        <td contenteditable="false">012-3456789</td>
+                        <td contenteditable="false">123, Jalan ABC, 12345, Kuala Lumpur</td>
+                        <td class="rowAction" width="225px">
+                            <div class="Action">
+                                <button class="edit" onclick="editRow(this)"><span class="edit-text">Edit</span><span class="edit-icon"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M14.846 1.403l3.752 3.753.625-.626A2.653 2.653 0 0015.471.778l-.625.625zm2.029 5.472l-3.752-3.753L1.218 15.028 0 19.998l4.97-1.217L16.875 6.875z">
+                                            </path>
+                                        </svg></span></button>
+                                <button class="delete" onclick="delRow(this)"><span
+                                        class="delete-text">Delete</span><span class="delete-icon"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z">
+                                            </path>
+                                        </svg></span></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="chk" id="chk" value="3"></td>
+                        <td contenteditable="false">M0004</td>
+                        <td contenteditable="false">Niclolas</td>
+                        <td contenteditable="false">niclolas@gmail.com</td>
+                        <td contenteditable="false">012-3456789</td>
+                        <td contenteditable="false">123, Jalan ABC, 12345, Kuala Lumpur</td>
+                        <td class="rowAction" width="225px">
+                            <div class="Action">
+                                <button class="edit" onclick="editRow(this)"><span class="edit-text">Edit</span><span class="edit-icon"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M14.846 1.403l3.752 3.753.625-.626A2.653 2.653 0 0015.471.778l-.625.625zm2.029 5.472l-3.752-3.753L1.218 15.028 0 19.998l4.97-1.217L16.875 6.875z">
+                                            </path>
+                                        </svg></span></button>
+                                <button class="delete" onclick="delRow(this)"><span
+                                        class="delete-text">Delete</span><span class="delete-icon"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z">
+                                            </path>
+                                        </svg></span></button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </main>
+    </div>
+    <script>
+        document.getElementById('logout-link').addEventListener('click', function(event) {
+            event.preventDefault(); 
+            if (confirm('Are you sure you want to logout?')) {
+                window.location.href = 'adminlogin.html';
+            }
+        });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <script src="admindashboard.js"></script>
+</body>
+
+</html>
