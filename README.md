@@ -1,6 +1,6 @@
 # Internet-and-Web-Publishing-Project--Tesla-website-clone-and-admin-page
 
-You website should designed for at least two types of user roles (customer and 
+Website should designed for at least two types of user roles (customer and 
 administrator)
 User basic pages:
 1. Main page. Save this page as index.html.
@@ -33,14 +33,14 @@ o Add, view, delete, update order
 8. View/print sales report page
    
 REQUIREMENTS:
-• Font 
-• Heading / Paragraph 
-• Images.
-• Tables 
-• Hyperlinks (Text and image).
-• Lists : ordered, unordered and image/animated bullet.
-• Multimedia elements (sound and movie).
-• Cascading Style Sheet (CSS) : External, Internal, Inline.
+o Font 
+o Heading / Paragraph 
+o Images.
+o Tables 
+o Hyperlinks (Text and image).
+o Lists : ordered, unordered and image/animated bullet.
+o Multimedia elements (sound and movie).
+o Cascading Style Sheet (CSS) : External, Internal, Inline.
 • Forms.
 o Online order forms
 o Comment forms
