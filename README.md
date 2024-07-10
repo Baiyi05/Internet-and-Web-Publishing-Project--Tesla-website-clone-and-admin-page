@@ -1,6 +1,6 @@
 # Internet-and-Web-Publishing-Project--Tesla-website-clone-and-admin-page
 
-Website should designed for at least two types of user roles (customer and 
+# Website should designed for at least two types of user roles (customer and 
 administrator)
 User basic pages:
 1. Main page. Save this page as index.html.
@@ -32,7 +32,7 @@ Administrator basic pages:
 - Add, view, delete, update order
 8. View/print sales report page
    
-REQUIREMENTS:
+# REQUIREMENTS:
 - Font 
 - Heading / Paragraph 
 - Images.
